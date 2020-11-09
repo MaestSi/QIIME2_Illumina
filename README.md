@@ -1,6 +1,11 @@
 # QIIME2_Illumina
 
 **QIIME2_Illumina** is a Meta-barcoding pipeline for analysing Illumina data in QIIME2 framework. Tested with Ubuntu 14.04.4 LTS.
+
+<p align="center">
+  <img src="Figures/QIIME2_Illumina.png" alt="drawing" width="700" title="QIIME2_Illumina_pipelines">
+</p>
+
 ## Getting started
 
 **Prerequisites**
