@@ -76,13 +76,13 @@ Outputs:
 
 **Denoise_sequences.sh**
 
-Usage: Denoise_sequences.qza \<trim_left_f\> \<trim_left_r\> \<trunc_left_f\> \<trunc_left_r\>
+Usage: Denoise_sequences.qza \<trim_left_FW\> \<trim_left_RV\> \<trunc_left_FW\> \<trunc_left_RV\>
 
 Inputs:
-* \<trim_left_f\>: number of bases to be trimmed from 5' end of forward reads
-* \<trim_left_r\>: number of bases to be trimmed from 5' end of reverse reads
-* \<trunc_left_f\>: number of bases to truncate forward reads at
-* \<trunc_left_r\>: number of bases to be truncate reverse reads at
+* \<trim_left_FW\>: number of bases to be trimmed from 5' end of forward reads
+* \<trim_left_RV\>: number of bases to be trimmed from 5' end of reverse reads
+* \<trunc_left_FW\>: number of bases to truncate forward reads at (choose a value by looking at demuz_summary.qzv file)
+* \<trunc_left_RV\>: number of bases to be truncate reverse reads at (choose a value by looking at demuz_summary.qzv file)
 
 Outputs:
 * \<rep-seqs.qz\*\>: representative sequences (Amplicon Sequence Variants, ASVs)
