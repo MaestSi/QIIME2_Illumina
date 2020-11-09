@@ -47,6 +47,7 @@ Outputs:
 * \<"TAXONOMY".qza\>: _QIIME2_ artifact of type _HeaderlessTSVTaxonomyFormat_ containing taxonomy of reference sequences
 
 **Create_manifest.sh**
+
 Usage: Create_manifest.sh \<sample_metadata\> \<reads_dir\>;
 
 Inputs:
@@ -56,7 +57,9 @@ Outputs:
 * \<manifest.txt\>: file used for importing reads in QIIME2
 
 **Import_data.sh**
+
 Usage: Import_data.sh \<manifest.txt\> \<FW_primer\> \<RV_primer\>
+
 Inputs:
 * \<manifest.txt\>: file used for importing reads in QIIME2
 * \<FW_primer\>: the sequence of the forward PCR primer
@@ -67,4 +70,51 @@ Outputs:
 * \<demux_summary_untrimmed.qzv\>: QIIME2 visualization file for inspecting sequencing quality before PCR primers trimming
 * \<demuz_summary.qzv\>: QIIME2 visualization file for inspecting sequencing quality after PCR primers trimming
 
+**Denoise_sequences.sh**
 
+Usage: Denoise_sequences.qza \<trim_left_f\> \<trim_left_r\> \<trunc_left_f\> \<trunc_left_r\>
+
+Inputs:
+* \<trim_left_f\>: number of bases to be trimmed from 5' end of forward reads
+* \<trim_left_r\>: number of bases to be trimmed from 5' end of reverse reads
+* \<trunc_left_f\>: number of bases to truncate forward reads at
+* \<trunc_left_r\>: number of bases to be truncate reverse reads at
+
+Outputs:
+* \<rep-seqs.qz\*\>: representative sequences (Amplicon Sequence Variants, ASVs)
+* \<table.qz\*\>: table with counts for each ASV
+* \<denoising-stats.qzv\>: statistics describing denoising performed by DADA2
+
+**Assign_taxonomy.sh**
+
+Usage: Assign_taxonomy.sh \<classifier\>
+
+Inputs:
+* \<classifier\>: Naive-Bayes classifier
+
+Outputs:
+
+* \<taxonomy.qz\*\>: taxonomy assigned to each ASV
+* \<taxa-bar-plots.qzv\>: taxonomy barplot describing samples composition at each taxonomic level
+* \<feature-table_\*freq.tsv\>: tables with the number or proportion of reads assigned to each taxa
+
+**Diversity_analyses.sh**
+
+Usage: Diversity_analyses.sh \<sampling_depth\>
+
+Inputs:
+* \<sampling_depth\>: minimum number of filtered fragments for a sample to be included in the analyses; the value should be chosen by looking at demuz_summary.qzv file
+
+Outputs:
+
+* \<core-metrics-results\>: directory containing various beta diversity analyses
+* \<alpha-rarefaction.qzv\>: rarefaction curve, computing the dependance between sequencing depths and various alpha diversity metrics
+
+## Results visualization
+
+All .qzv and .qza artifacts can be visualized either importing them to [QIIME2 View](https://view.qiime2.org/) or with command:
+
+```
+source activate QIIME2_Illumina_env
+qiime tools view <file.qz*>
+```
