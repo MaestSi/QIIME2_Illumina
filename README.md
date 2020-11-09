@@ -34,7 +34,7 @@ The _QIIME2_Illumina_ pipeline is composed of a set of scripts which should be r
 
 **Train_classifier.sh**
 
-Usage: Train_classifier.sh \<FW_primer\> \<RV_primer\> <DB_FASTA> <TAXONOMY_TSV>;
+Usage: Train_classifier.sh \<FW_primer\> \<RV_primer\> <DB_FASTA> <TAXONOMY_TSV>
 
 Note: this script should be run only if you don't have a Naive-Bayes classifier trained on the region of interest of your marker gene yet.
 
@@ -50,7 +50,7 @@ Outputs:
 
 **Create_manifest.sh**
 
-Usage: Create_manifest.sh \<sample_metadata\> \<reads_dir\>;
+Usage: Create_manifest.sh \<sample_metadata\> \<reads_dir\>
 
 Inputs:
 * \<sample-metadata.tsv\>: file containing metadata for all samples, validated with [Keemei](https://keemei.qiime2.org/)
@@ -66,6 +66,7 @@ Inputs:
 * \<manifest.txt\>: file used for importing reads in QIIME2
 * \<FW_primer\>: the sequence of the forward PCR primer
 * \<RV_primer\>: the sequence of the reverse PCR primer
+
 Outputs:
 * \<sequences_untrimmed.qza\>: reads before PCR primers trimming
 * \<sequences.qza\>: reads after PCR primers trimming
