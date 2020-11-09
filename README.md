@@ -55,6 +55,7 @@ Usage: Create_manifest.sh \<sample_metadata\> \<reads_dir\>
 Inputs:
 * \<sample-metadata.tsv\>: file containing metadata for all samples, validated with [Keemei](https://keemei.qiime2.org/)
 * \<reads_dir\>: directory containing R1 and R2 reads in fastq.gz format
+
 Outputs:
 * \<manifest.txt\>: file used for importing reads in QIIME2
 
