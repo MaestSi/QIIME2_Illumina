@@ -34,7 +34,8 @@ The _QIIME2_Illumina_ pipeline is composed of a set of scripts which should be r
 
 **Train_classifier.sh**
 
-Usage: Train_classifier.sh \<FW_primer\> \<RV_primer\> <DB_FASTA> <TAXONOMY_TSV>; Note: this script should be run only if you don't have a Naive-Bayes classifier trained on the region of interest of your marker gene yet.
+Usage: Train_classifier.sh \<FW_primer\> \<RV_primer\> <DB_FASTA> <TAXONOMY_TSV>;
+Note: this script should be run only if you don't have a Naive-Bayes classifier trained on the region of interest of your marker gene yet.
 
 Inputs:
 * \<FW_primer\>: the sequence of the forward PCR primer
