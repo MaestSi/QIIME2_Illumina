@@ -30,7 +30,7 @@ A conda environment named _QIIME2_Illumina_env_ is created, where qiime2-2020.8 
 
 ## Usage
 
-The _QIIME2_Illumina_ pipeline is composed of a set of scripts which should be run sequentially.
+The _QIIME2_Illumina_ pipeline is composed of a set of scripts which should be run sequentially. The pipeline assumes you keep the default name to output files, and leave them in the working directory.
 
 **Train_classifier.sh**
 
