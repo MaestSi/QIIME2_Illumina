@@ -94,7 +94,7 @@ Outputs:
 Usage: Assign_taxonomy.sh \<classifier\>
 
 Inputs:
-* \<classifier\>: Naive-Bayes classifier
+* \<classifier\>: QIIME2 artifact (.qza) for Naive-Bayes classifier
 
 Outputs:
 
