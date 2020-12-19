@@ -19,5 +19,5 @@
 #
 
 
-wget https://data.qiime2.org/distro/core/qiime2-2020.8-py36-linux-conda.yml
-conda env create -n QIIME2_Illumina_env --file qiime2-2020.8-py36-linux-conda.yml
+wget https://data.qiime2.org/distro/core/qiime2-2020.11-py36-linux-conda.yml
+conda env create -n QIIME2_Illumina_env --file qiime2-2020.11-py36-linux-conda.yml
