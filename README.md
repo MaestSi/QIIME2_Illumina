@@ -50,6 +50,7 @@ Inputs:
 * \<TAXONOMY_tsv\>: a text file containing taxonomy corresponding to sequences in the reference database
 
 Outputs:
+* \<"DB".nb-classifier.qza\>: Naive-Bayes classifier trained on the region of interest of the marker gene
 * \<"DB".qza\>: _QIIME2_ artifact of type _DNAFASTAFormat_ containing reference sequences
 * \<"TAXONOMY".qza\>: _QIIME2_ artifact of type _HeaderlessTSVTaxonomyFormat_ containing taxonomy of reference sequences
 
