@@ -77,7 +77,7 @@ Outputs:
 * \<sequences_untrimmed.qza\>: reads before PCR primers trimming
 * \<sequences.qza\>: reads after PCR primers trimming
 * \<demux_summary_untrimmed.qzv\>: QIIME2 visualization file for inspecting sequencing quality before PCR primers trimming
-* \<demuz_summary.qzv\>: QIIME2 visualization file for inspecting sequencing quality after PCR primers trimming
+* \<demux_summary.qzv\>: QIIME2 visualization file for inspecting sequencing quality after PCR primers trimming
 
 **Denoise_sequences.sh**
 
