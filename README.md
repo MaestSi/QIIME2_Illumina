@@ -31,7 +31,7 @@ chmod 755 *
 ./install.sh
 ```
 
-A conda environment named _QIIME2_Illumina_env_ is created, where qiime2-2020.11 is installed.
+A conda environment named _QIIME2_Illumina_env_ is created, where qiime2-2021.4 is installed.
 
 ## Usage
 
