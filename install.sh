@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-# Copyright 2020 Simone Maestri. All rights reserved.
+# Copyright 2021 Simone Maestri. All rights reserved.
 # Simone Maestri <simone.maestri@univr.it>
 #
 # This program is free software: you can redistribute it and/or modify
@@ -19,5 +19,5 @@
 #
 
 
-wget https://data.qiime2.org/distro/core/qiime2-2020.11-py36-linux-conda.yml
-conda env create -n QIIME2_Illumina_env --file qiime2-2020.11-py36-linux-conda.yml
+wget https://data.qiime2.org/distro/core/qiime2-2021.4-py38-linux-conda.yml
+conda env create -n QIIME2_Illumina_env --file qiime2-2021.4-py38-linux-conda.yml
