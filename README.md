@@ -20,7 +20,7 @@ chmod 755 Miniconda3-latest-Linux-x86_64.sh
 ./Miniconda3-latest-Linux-x86_64.sh
 ```
 
-* A fasta file that you want to use as a reference database and a text file with taxonmy, or a preformatted [marker gene reference database](https://docs.qiime2.org/2020.11/data-resources/#taxonomy-classifiers-for-use-with-q2-feature-classifier).
+* A fasta file that you want to use as a reference database and a text file with taxonmy, or a preformatted [marker gene reference database](https://docs.qiime2.org/2021.8/data-resources/#taxonomy-classifiers-for-use-with-q2-feature-classifier).
 
 **Installation**
 
@@ -31,7 +31,7 @@ chmod 755 *
 ./install.sh
 ```
 
-A conda environment named _QIIME2_Illumina_env_ is created, where qiime2-2021.4 is installed.
+A conda environment named _QIIME2_Illumina_env_ is created, where qiime2-2021.8 is installed.
 
 ## Usage
 
