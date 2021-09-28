@@ -82,7 +82,7 @@ Outputs:
 
 **Denoise_sequences.sh**
 
-Usage: Denoise_sequences.qza \<trim_left_FW\> \<trim_left_RV\> \<trunc_left_FW\> \<trunc_left_RV\>
+Usage: Denoise_sequences.sh \<trim_left_FW\> \<trim_left_RV\> \<trunc_left_FW\> \<trunc_left_RV\>
 
 Inputs:
 * \<trim_left_FW\>: number of bases to be trimmed from 5' end of forward reads
