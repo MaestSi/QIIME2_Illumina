@@ -113,7 +113,7 @@ Outputs:
 Usage: Diversity_analyses.sh \<sampling_depth\>
 
 Inputs:
-* \<sampling_depth\>: minimum number of filtered fragments for a sample to be included in the analyses; the value should be chosen by looking at demux_summary.qzv file
+* \<sampling_depth\>: minimum number of filtered fragments for a sample to be included in the analyses; the value should be chosen by looking at table.qzv file
 
 Outputs:
 
