@@ -39,7 +39,7 @@ The _QIIME2_Illumina_ pipeline is composed of a set of scripts which should be r
 
 **Train_classifier.sh**
 
-Usage: Train_classifier.sh \<FW_primer\> \<RV_primer\> <DB_FASTA> <TAXONOMY_TSV>
+Usage: Train_classifier.sh \<FW_primer\> \<RV_primer\> \<DB_FASTA\> \<TAXONOMY_TSV\> \<MIN_LEN\> \<MAX_LEN\>
 
 Note: this script should be run only if you don't have a Naive-Bayes classifier trained on the region of interest of your marker gene yet.
 
@@ -48,6 +48,8 @@ Inputs:
 * \<RV_primer\>: the sequence of the reverse PCR primer
 * \<DB_fasta\>: a fasta file containing sequences of the reference database
 * \<TAXONOMY_tsv\>: a text file containing taxonomy corresponding to sequences in the reference database
+* \<MIN_LEN\>: minimum expected amplicon size
+* \<MAX_LEN\>: maximum expected amplicon size
 
 Outputs:
 * \<"DB".nb-classifier.qza\>: Naive-Bayes classifier trained on the region of interest of the marker gene
