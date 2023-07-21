@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-# Copyright 2021 Simone Maestri. All rights reserved.
+# Copyright 2020 Simone Maestri. All rights reserved.
 # Simone Maestri <simone.maestri@univr.it>
 #
 # This program is free software: you can redistribute it and/or modify
@@ -22,9 +22,11 @@ FW_PRIMER=$1
 RV_PRIMER=$2
 DB_FASTA=$3
 TAXONOMY_TSV=$4
+MIN_LEN=$5
+MAX_LEN=$6
 
-DB=$(echo $(basename $DB_FASTA) | sed 's/\.f.*/.qza/')
-TAXONOMY=$(echo $(basename $TAXONOMY_TSV) | sed 's/\.t.*/.qza/')
+DB=$(echo $(basename $DB_FASTA) | sed 's/\.fa.*/.qza/')
+TAXONOMY=$(echo $(basename $TAXONOMY_TSV) | sed 's/\.tsv.*/.qza/')
 CLASSIFIER=$(echo $(basename $DB_FASTA) | sed 's/\.f.*/-nb-classifier.qza/')
 
 qiime tools import \
@@ -43,8 +45,8 @@ qiime feature-classifier extract-reads \
   --i-sequences $DB \
   --p-f-primer $FW_PRIMER \
   --p-r-primer $RV_PRIMER \
-  --p-min-length 100 \
-  --p-max-length 600 \
+  --p-min-length $MIN_LEN \
+  --p-max-length $MAX_LEN \
   --o-reads ref-seqs.qza
 
 qiime feature-classifier fit-classifier-naive-bayes \
