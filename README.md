@@ -134,9 +134,11 @@ qiime tools view <file.qz*>
 
 The QIIME2_Illumina pipeline is composed of some wrapper scripts for [QIIME2](https://qiime2.org/). 
 
-If this tool is useful for your work, please consider citing our [manuscript](https://www.mdpi.com/1467-3045/46/5/237).
+If this tool is useful for your work, please consider citing our [manu](https://www.mdpi.com/1467-3045/46/5/237)[scripts](https://doi.org/10.1080/01650521.2024.2423559).
 
 Matoute, A.; Maestri, S.; Saout, M.; Laghoe, L.; Simon, S.; Blanquart, H.; Hernandez Martinez, M.A.; Pierre Demar, M. Meat-Borne-Parasite: A Nanopore-Based Meta-Barcoding Work-Flow for Parasitic Microbiodiversity Assessment in the Wild Fauna of French Guiana. Curr. Issues Mol. Biol. 2024, 46, 3810-3821. https://doi.org/10.3390/cimb46050237
+
+Klain, V., Maestri, S., & Bicca-Marques, J. C. (2024). Landscape structure influences the eukaryome of a folivorous-frugivorous primate. Studies on Neotropical Fauna and Environment, 1–8. https://doi.org/10.1080/01650521.2024.2423559
 
 Please, refer to the following manuscript for further information.
 
